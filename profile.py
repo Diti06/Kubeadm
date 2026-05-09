@@ -18,8 +18,8 @@ request = pc.makeRequestRSpec()
 pc.defineParameter(
     "github_repo",
     "GitHub Repository URL",
-    portal.ParameterType.STRING,
-    "https://github.com/your-username/your-repo-name.git",
+    portal.ParameterType.URI,
+    "https://github.com/Diti06/Kubeadm.git",
     "The URL of your GitHub repository containing the 01 to 07 setup scripts. "
     "This will be automatically cloned into /local/setup on every node during boot."
 )
