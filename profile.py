@@ -36,8 +36,8 @@ def create_xen_node(name):
     node = ig.XenVM(name)
     # We want exclusive access to the underlying hardware
     node.exclusive = True
-    # Hardcode to c6620 machines as per the paper's experimental setup
-    node.hardware_type = "c6620"
+    # Hardcode to c6220 machines as per your APT cluster reservation
+    node.hardware_type = "c6220"
     # Use standard Ubuntu 20.04 image
     node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU20-64-STD"
     # Add the automated script cloning service
